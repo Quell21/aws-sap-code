@@ -28,14 +28,15 @@
 
 1. Run the following command to assume the role using the CLI
 
-aws sts assume-role --role-arn arn:aws:iam::<target-account-id>:role/<role-name> --role-session-name mysession --external-id <external-id>
+aws sts assume-role --role-arn arn:aws:iam::692859928929:role/Cross-account-test --role-session-name mysession --external-id PASS123456
 
 2. Configure the credentials
+3.     
 
-aws configure set aws_access_key_id <access-key-id> --profile target-account
-aws configure set aws_secret_access_key <secret-access-key> --profile target-account
-aws configure set aws_session_token <session-token> --profile target-account
+aws configure set aws_access_key_id <> --profile target-account
+aws configure set aws_secret_access_key <> --profile target-account
+aws configure set aws_session_token <> --profile target-account
 
 3. Run CLI commands against the bucket
 
-aws s3 ls s3://<bucket-name> --profile target-account
+aws s3 ls s3://test-cross-account-s3214 --profile target-account
