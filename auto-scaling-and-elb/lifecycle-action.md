@@ -13,7 +13,7 @@ aws autoscaling put-lifecycle-hook --auto-scaling-group-name ASG1 --lifecycle-ho
 
 5. Subscribe the function to the topic
 
-aws sns subscribe --topic-arn <sns-topic-arn> --protocol lambda --notification-endpoint arn:aws:lambda:us-east-1:821711655051:function:lambda-lifecycle
+aws sns subscribe --topic-arn arn:aws:sns:us-east-1:692859928929:my-lifecycle-topic --protocol lambda --notification-endpoint arn:aws:lambda:us-east-1:692859928929:function:lambda-lifecycle
 
 6. Check that the trigger is present in Lambda, create if necessary
 
