@@ -14,7 +14,7 @@ Partition key: ProductVisitKey
 Name: ProductVisitsDataQueue
 Type: Standard
 	
-Note the Queue URL: https://sqs.us-west-1.amazonaws.com/692859928929/ProductVisitsDataQueue
+Note the Queue URL: https://sqs.us-east-1.amazonaws.com/692859928929/ProductVisitsDataQueue
 
 3. Go to AWS Lambda and create function:
 	
