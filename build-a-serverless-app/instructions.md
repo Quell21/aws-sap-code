@@ -2,7 +2,7 @@
 
 Region: us-east-1
 
-Note your AWS account ID: *ACCOUNT_ID*
+Note your AWS account ID: 692859928929
 
 1. Create DynamoDB Table:
 	
@@ -14,7 +14,7 @@ Partition key: ProductVisitKey
 Name: ProductVisitsDataQueue
 Type: Standard
 	
-Note the Queue URL: *QUEUE URL*
+Note the Queue URL: https://sqs.us-west-1.amazonaws.com/692859928929/ProductVisitsDataQueue
 
 3. Go to AWS Lambda and create function:
 	
