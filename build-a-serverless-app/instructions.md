@@ -42,8 +42,7 @@ File location: Code/build-a-serverless-app/part-1
 2. On the "Exports and streams" configuration tab, enable a DynamoDB stream for "New Image"
 3. Create S3 bucket in same region:
 
-Name: product-visits-datalake
-Modify: bucket name by adding letters/numbers at end to be unique
+Name: products-visited-datalake-dynamodbtest7
 Region: us-east-1
 
 4. Go to IAM and create a policy:
@@ -61,7 +60,7 @@ Name: productVisitsLoadingLambdaRole
 6. Unzip "DCTProductVisitsDataLake.zip" 
 7. Edit index.js and update bucket name entry:
 
-Bucket: 'product-visits-datalake'
+Bucket: 'products-visited-datalake-dynamodbtest7'
 Note: Change bucket name to YOUR bucket name
 
 8. Then zip up contents (don't zip the whole folder) into "DCTProductVisitsDataLake.zip"
