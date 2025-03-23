@@ -3,7 +3,7 @@
     "cluster": "ecs-cluster",
     "loadBalancers": [
         {
-            "targetGroupArn": "TARGET-GROUP-ARN",
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:692859928929:targetgroup/Target80/a345c07d26584d69",
             "containerName": "sample-website",
             "containerPort": 80
         }
@@ -17,11 +17,11 @@
     "networkConfiguration": {
         "awsvpcConfiguration": {
             "subnets": [
-                "SUBNET-ID",
-                "SUBNET-ID"
+                "subnet-05d8291c8906dbc5c",
+                "subnet-090354626f1117a6c"
             ],
             "securityGroups": [
-                "SECURITY-GROUP-ID"
+                "sg-0b84225e1376085f3"
             ],
             "assignPublicIp": "ENABLED"
         }
